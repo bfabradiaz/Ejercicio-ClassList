@@ -23,17 +23,30 @@ body{
 }
 
 .img--container{
-    width: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
+    position: relative;
 }
 
+.line {
+    position: absolute; 
+    border: 1px solid #e4e4e4; 
+    top: 50px;
+    width: 90%; 
+  }
+
 .img--container img{
-    width: 100%;
+    width: 100px;
     height:100px;
     border-radius: 50%;  
     object-fit: cover;  
-    
+    border: 20px solid #ffffff;
+    z-index: 1;
 }
+
 h2{
     font-size: 25px;
     font-family: 'Bitter', serif;
@@ -64,9 +77,9 @@ p{
     background-color: #ff95f1;
 }
 
-.button:hover{
+/* .button:hover{
     background-color: #4db8ff;
-}
+} */
 
 @media (max-width: 1024px){
     
